@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Photocard Model</title>
+	</head>
+	<body>
+		<h1>A Photocard List</h1>
+		{% for item in my_list %}
+			<p>{{ item }} , {{ item.price }} WON</p>
+		{% endfor %}
+	</body>
+</html>
