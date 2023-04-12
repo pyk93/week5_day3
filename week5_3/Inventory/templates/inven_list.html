@@ -8,5 +8,10 @@
 		{% for item in my_list %}
 			<p>{{ item }} , {{ item.price }} WON</p>
 		{% endfor %}
+
+		<form method="POST">{% csrf_token %}
+			{{ photocard_add_form.as_p }}
+			<button type="submit">Save</button>
+		</form>
 	</body>
 </html>
